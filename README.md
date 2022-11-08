@@ -8,11 +8,10 @@ educational.
 
 # Quickstart 
 
-The easiest way to get the REST API to run is by running it from a 
-docker container. You will probably need Docker Desktop installed on your 
-computer.
+The easiest way to get the REST API to run is by using a docker container. You 
+will probably need Docker Desktop installed on your computer.
 
-The fist step will be to build the docker container. 
+The first step will be to build the docker container. 
 
 ```
 git clone https://github.com/cedricbatailler/lemondeapi.git
