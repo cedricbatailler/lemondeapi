@@ -15,7 +15,6 @@ function(pr) {
                          primary_color = "#036487")
 }
 
-
 #* Return the 9 most read headlines of lemonde.fr
 #* @get /mostpopular
 function() {
