@@ -1,9 +1,8 @@
-FROM rocker/r-ver
+FROM debian:bullseye-20221024
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-    libxml2-dev \
-    libz-dev
+    && apt-get install -y \
+    libcurl4-openssl-dev libsodium-dev libssl-dev libxml2-dev r-base 
 
 COPY renv.lock renv.lock
 RUN Rscript -e "install.packages('renv')"
