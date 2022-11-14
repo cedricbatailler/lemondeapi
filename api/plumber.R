@@ -9,7 +9,7 @@ library(rapidoc)
 
 #' @plumber
 function(pr) {
-  pr |>
+  pr %>%
     plumber::pr_set_docs("rapidoc",
                          header_color = "#000",
                          primary_color = "#036487")
@@ -22,8 +22,8 @@ function() {
   url <- "https://www.lemonde.fr/"
   html <- rvest::read_html(url)
 
-  html |>
-    rvest::html_elements(".old__article-list-grid > a") |>
+  html %>%
+    rvest::html_elements(".old__article-list-grid > a") %>%
     purrr::imap_dfr(
       ~ tibble::tibble(
         rank = .y,
